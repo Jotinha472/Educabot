@@ -110,9 +110,8 @@ chat_container = st.container()
 
 for troca in reversed (st.session_state.chat_history):
     with chat_container:
-        st.markdown(f'<div class="bot-message chat-message"><strong>EducaBot:</strong> {troca["bot"]}</div>', unsafe_allow_html=True)
         st.markdown(f'<div class="user-message chat-message"><strong>Você:</strong> {troca["user"]}</div>', unsafe_allow_html=True)
-
+        st.markdown(f'<div class="bot-message chat-message"><strong>EducaBot:</strong> {troca["bot"]}</div>', unsafe_allow_html=True)
 
 # ==== RODAPÉ COM DATA ====
 data_hora_atual = datetime.now(fuso).strftime('%d/%m/%Y %H:%M')
