@@ -158,7 +158,7 @@ with st.sidebar:
 
     idioma = st.selectbox("🌐 Idioma da resposta", ["Português", "Inglês", "Espanhol"])
 
-    if st.button("🆕 Nova conversa"):
+    if st.button("Nova conversa"):
         novo_nome = f"Conversa {len(st.session_state.conversas_salvas)}"
         st.session_state.conversas_salvas[novo_nome] = []
         st.session_state.selected_conversation = novo_nome
